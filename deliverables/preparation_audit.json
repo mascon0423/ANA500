@@ -1,0 +1,104 @@
+{
+  "input_rows": 32561,
+  "input_columns": 15,
+  "output_rows": 32561,
+  "output_columns": 17,
+  "rows_removed": 0,
+  "missing_by_column": {
+    "age": 0,
+    "workclass": 1836,
+    "fnlwgt": 0,
+    "education": 0,
+    "education-num": 0,
+    "marital-status": 0,
+    "occupation": 1843,
+    "relationship": 0,
+    "race": 0,
+    "sex": 0,
+    "capital-gain": 0,
+    "capital-loss": 0,
+    "hours-per-week": 0,
+    "native-country": 583,
+    "income": 0
+  },
+  "rows_with_missing": 2399,
+  "duplicate_profiles_beyond_first": 24,
+  "income_counts": {
+    "<=50K": 24720,
+    ">50K": 7841
+  },
+  "education_group_counts": {
+    "Below bachelor's": 24494,
+    "Bachelor's or higher": 8067
+  },
+  "numeric_percentiles": {
+    "age": {
+      "minimum": 17.0,
+      "Q1": 28.0,
+      "median": 37.0,
+      "Q3": 48.0,
+      "maximum": 90.0
+    },
+    "fnlwgt": {
+      "minimum": 12285.0,
+      "Q1": 117827.0,
+      "median": 178356.0,
+      "Q3": 237051.0,
+      "maximum": 1484705.0
+    },
+    "education-num": {
+      "minimum": 1.0,
+      "Q1": 9.0,
+      "median": 10.0,
+      "Q3": 12.0,
+      "maximum": 16.0
+    },
+    "capital-gain": {
+      "minimum": 0.0,
+      "Q1": 0.0,
+      "median": 0.0,
+      "Q3": 0.0,
+      "maximum": 99999.0
+    },
+    "capital-loss": {
+      "minimum": 0.0,
+      "Q1": 0.0,
+      "median": 0.0,
+      "Q3": 0.0,
+      "maximum": 4356.0
+    },
+    "hours-per-week": {
+      "minimum": 1.0,
+      "Q1": 40.0,
+      "median": 40.0,
+      "Q3": 45.0,
+      "maximum": 99.0
+    }
+  },
+  "prepared_dtypes": {
+    "age": "int64",
+    "workclass": "category",
+    "fnlwgt": "int64",
+    "education": "category",
+    "education-num": "int64",
+    "marital-status": "category",
+    "occupation": "category",
+    "relationship": "category",
+    "race": "category",
+    "sex": "category",
+    "capital-gain": "int64",
+    "capital-loss": "int64",
+    "hours-per-week": "int64",
+    "native-country": "category",
+    "income": "category",
+    "education_group": "category",
+    "income_gt_50k": "int64"
+  },
+  "hypothesis_tested": false,
+  "input_sha256": "f2c62076f19504d99a38b22badf445a7f42530ade6b827acf78dd143fbce38bb",
+  "versions": {
+    "Python": "3.13.3",
+    "NumPy": "2.5.3",
+    "Pandas": "3.0.6"
+  }
+}

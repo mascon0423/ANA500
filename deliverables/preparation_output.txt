@@ -1,0 +1,71 @@
+ANA500 MICRO-PROJECT 1 | Douglas Bobeck
+Scope: Acquire and Prepare. Hypothesis remains untested.
+Input: 32,561 records x 15 columns
+Prepared: 32,561 records x 17 columns
+Rows removed: 0
+Source SHA-256: f2c62076f19504d99a38b22badf445a7f42530ade6b827acf78dd143fbce38bb
+Versions: {'Python': '3.13.3', 'NumPy': '2.5.3', 'Pandas': '3.0.6'}
+
+MISSING VALUES (retained as unknown)
+age                  0
+workclass         1836
+fnlwgt               0
+education            0
+education-num        0
+marital-status       0
+occupation        1843
+relationship         0
+race                 0
+sex                  0
+capital-gain         0
+capital-loss         0
+hours-per-week       0
+native-country     583
+income               0
+Rows with at least one missing value: 2,399
+Repeated profiles beyond first occurrence: 24
+Repeated profiles retained because no person identifier is available.
+
+NUMPY NUMERIC DISTRIBUTION SUMMARY (unweighted sample)
+                minimum        Q1    median        Q3    maximum
+age                17.0      28.0      37.0      48.0       90.0
+fnlwgt          12285.0  117827.0  178356.0  237051.0  1484705.0
+education-num       1.0       9.0      10.0      12.0       16.0
+capital-gain        0.0       0.0       0.0       0.0    99999.0
+capital-loss        0.0       0.0       0.0       0.0     4356.0
+hours-per-week      1.0      40.0      40.0      45.0       99.0
+
+INCOME CATEGORY COUNTS (unweighted sample)
+income
+<=50K    24720
+>50K      7841
+
+EDUCATION GROUP COUNTS (no income comparison)
+education_group
+Below bachelor's        24494
+Bachelor's or higher     8067
+
+PREPARED DATA TYPES
+age                   int64
+workclass          category
+fnlwgt                int64
+education          category
+education-num         int64
+marital-status     category
+occupation         category
+relationship       category
+race               category
+sex                category
+capital-gain          int64
+capital-loss          int64
+hours-per-week        int64
+native-country     category
+income             category
+education_group    category
+income_gt_50k         int64
+
+VALIDATION: schema, required values, integer fields, ranges,
+income labels, and education-code agreement all passed.
+Historical 1994 sample. fnlwgt retained as a survey weight.
+These summaries are not weighted population estimates.
+No hypothesis test, causal conclusion, model, or recommendation.

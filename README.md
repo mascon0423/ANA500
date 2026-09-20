@@ -7,22 +7,22 @@ data. It ends at **Step 2: Prepare** of the data science process.
 
 ## Problem and hypothesis
 
-The project investigates how income category varies with educational attainment.
+This project looks at the relationship between education and income.
 The question is whether the share earning above $50,000 is greater among adults
 with a bachelor's degree or higher than among adults with less education.
-The hypothesis is that the bachelor's-or-higher group has the greater share.
-Higher education may provide access to occupations with higher earnings, but
-that is a proposed explanation, not a demonstrated result.
+The hypothesis is that adults with at least a bachelor's degree are more likely
+to earn above $50,000. More education may help people qualify for jobs with
+higher pay. That explanation would need to be tested.
 
 **The hypothesis is not tested here.** This project contains no model, causal
 claim, significance test, or comparison of income rates by education group.
 
-## Run in PyCharm
+## Tools used
 
-Open this folder as the PyCharm project. Select its `.venv` Python interpreter,
-open `micro_project_1.py`, and choose **Run 'micro_project_1'**. Input/output paths
-are anchored to the script, so the working-directory setting does not matter.
-The script includes section comments explaining the methods and decisions.
+Python 3.13.3, Pandas 3.0.6, and NumPy 2.5.3 were used to prepare the data.
+The script was run in PyCharm.
+
+## Reproduce results
 
 From a terminal in the project directory:
 
@@ -33,25 +33,23 @@ python3 -m venv .venv
 .venv/bin/python check_micro_project_1.py
 ```
 
-The existing environment uses Python 3.13.3, NumPy 2.5.3, and Pandas 3.0.6.
-No API keys, environment variables, network connection, or extra runtime
-dependencies are required after installation. Running the script regenerates
-the prepared CSV, JSON audit, and text output. The submitted presentation and
-code PDF are snapshots of the verified run, not automatically regenerated.
+After installing the dependencies, the project runs locally. Running the script
+saves the prepared CSV, JSON audit, and text output in `deliverables`.
+The presentation and code PDF contain the results from that run and are updated
+separately when the project changes.
 
 ## Deliverables
 
 - [Completed PowerPoint](deliverables/Douglas_Bobeck_ANA500_Micro_Project_1.pptx)
 - [Presentation PDF](deliverables/Douglas_Bobeck_ANA500_Micro_Project_1.pdf)
-- [Commented code and executed output PDF](deliverables/Douglas_Bobeck_ANA500_Micro_Project_1_Code.pdf)
-- [Runnable Python source](micro_project_1.py)
+- [Python code and output (PDF)](deliverables/Douglas_Bobeck_ANA500_Micro_Project_1_Code.pdf)
+- [Python code](micro_project_1.py)
 - [Prepared CSV](deliverables/adult_income_prepared.csv)
 - [Preparation audit](deliverables/preparation_audit.json)
-- [Execution output](deliverables/preparation_output.txt)
+- [Output](deliverables/preparation_output.txt)
 
-The deck uses the course template's title, Problem Statement, Hypothesis,
-Acquire, and Prepare slides. Prepare is expanded to three slides for readability.
-The later Analyze, Report, and Act slides are omitted for this assignment.
+The slides follow the course template and cover the problem statement,
+hypothesis, Acquire, and Prepare.
 
 ## Dataset and attribution
 
@@ -98,7 +96,7 @@ The exact input SHA-256 is recorded in `preparation_audit.json`.
 - Trim whitespace and convert `?` and empty cells to recognized missing values.
 - Retain unknown workclass (1,836), occupation (1,843), and native-country (583)
   values. These affect **2,399 records** in total because the counts overlap.
-  Education and income are complete, so ancillary missingness does not require
+  Education and income are complete, so these missing values do not require
   dropping rows for this question. Missing values export as empty CSV fields.
 - Validate the schema, numeric parsing, income categories, and the mapping
   between education and education-num. Convert numeric fields to integers and
@@ -115,15 +113,12 @@ The exact input SHA-256 is recorded in `preparation_audit.json`.
   and 24,494 records, respectively.
 - Preserve all **32,561 records**. The prepared dataset has **17 columns**.
 
-These are unweighted sample summaries. Survey-weighted population inference
-would require a separate analytical design. The data cannot establish that
-education causes income differences or describe today's income distribution.
+These summaries count each row equally. Using survey weights to estimate the
+larger population would need a separate analysis. The data do not show that
+education causes higher income or describe today's income distribution.
 
 ## Verification
 
 `check_micro_project_1.py` verifies the known file counts, independent example
 transformations, missing-value handling, invalid-input rejection, and preservation
 of the raw input. Run it with the same interpreter as the main script.
-
-No formatter, linter, or CI configuration existed in the new project. One useful
-future gate is to run this existing check on each GitHub push.

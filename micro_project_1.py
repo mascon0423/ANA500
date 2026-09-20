@@ -119,7 +119,7 @@ def prepare(raw):
 
 
 def main():
-    # Paths are relative to this script so PyCharm and terminal runs agree.
+    # File paths are based on this script's folder.
     # Read the source once and hash its bytes to identify the exact input file.
     source_hash = hashlib.sha256(INPUT.read_bytes()).hexdigest()
     raw = pd.read_csv(INPUT, dtype="string", keep_default_na=False)

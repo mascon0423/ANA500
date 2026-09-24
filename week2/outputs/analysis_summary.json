@@ -1,0 +1,562 @@
+{
+  "source_sha256": "f2c62076f19504d99a38b22badf445a7f42530ade6b827acf78dd143fbce38bb",
+  "rows": 32561,
+  "columns_in_source": 15,
+  "above_50k": 7841,
+  "overall_percent": 24.080955744602438,
+  "missing": {
+    "workclass": 1836,
+    "occupation": 1843,
+    "native-country": 583
+  },
+  "missing_rows": 2399,
+  "repeated_profiles": 24,
+  "repeat_effect_pp": 0.011615789343530025,
+  "versions": {
+    "Python": "3.11.5",
+    "Pandas": "2.2.2",
+    "NumPy": "1.26.4",
+    "Matplotlib": "3.8.4",
+    "Seaborn": "0.12.2"
+  },
+  "minimum_cell_n": 100,
+  "groups": {
+    "age_band": [
+      {
+        "age_band": "17-29",
+        "n": 9711,
+        "above_50k": 511,
+        "percent_above_50k": 5.2620739368
+      },
+      {
+        "age_band": "30-44",
+        "n": 12489,
+        "above_50k": 3680,
+        "percent_above_50k": 29.4659300184
+      },
+      {
+        "age_band": "45-59",
+        "n": 7717,
+        "above_50k": 2998,
+        "percent_above_50k": 38.849293767
+      },
+      {
+        "age_band": "60+",
+        "n": 2644,
+        "above_50k": 652,
+        "percent_above_50k": 24.6596066566
+      }
+    ],
+    "sex": [
+      {
+        "sex": "Female",
+        "n": 10771,
+        "above_50k": 1179,
+        "percent_above_50k": 10.9460588618
+      },
+      {
+        "sex": "Male",
+        "n": 21790,
+        "above_50k": 6662,
+        "percent_above_50k": 30.5736576411
+      }
+    ],
+    "education_band": [
+      {
+        "education_band": "Bachelor's+",
+        "n": 8067,
+        "above_50k": 3909,
+        "percent_above_50k": 48.456675344
+      },
+      {
+        "education_band": "College/associate",
+        "n": 9740,
+        "above_50k": 2013,
+        "percent_above_50k": 20.6673511294
+      },
+      {
+        "education_band": "HS graduate",
+        "n": 10501,
+        "above_50k": 1675,
+        "percent_above_50k": 15.9508618227
+      },
+      {
+        "education_band": "Less than HS",
+        "n": 4253,
+        "above_50k": 244,
+        "percent_above_50k": 5.7371267341
+      }
+    ],
+    "occupation_display": [
+      {
+        "occupation_display": "Adm-clerical",
+        "n": 3770,
+        "above_50k": 507,
+        "percent_above_50k": 13.4482758621
+      },
+      {
+        "occupation_display": "Armed-Forces",
+        "n": 9,
+        "above_50k": 1,
+        "percent_above_50k": 11.1111111111
+      },
+      {
+        "occupation_display": "Craft-repair",
+        "n": 4099,
+        "above_50k": 929,
+        "percent_above_50k": 22.664064406
+      },
+      {
+        "occupation_display": "Exec-managerial",
+        "n": 4066,
+        "above_50k": 1968,
+        "percent_above_50k": 48.401377275
+      },
+      {
+        "occupation_display": "Farming-fishing",
+        "n": 994,
+        "above_50k": 115,
+        "percent_above_50k": 11.569416499
+      },
+      {
+        "occupation_display": "Handlers-cleaners",
+        "n": 1370,
+        "above_50k": 86,
+        "percent_above_50k": 6.2773722628
+      },
+      {
+        "occupation_display": "Machine-op-inspct",
+        "n": 2002,
+        "above_50k": 250,
+        "percent_above_50k": 12.4875124875
+      },
+      {
+        "occupation_display": "Other-service",
+        "n": 3295,
+        "above_50k": 137,
+        "percent_above_50k": 4.157814871
+      },
+      {
+        "occupation_display": "Priv-house-serv",
+        "n": 149,
+        "above_50k": 1,
+        "percent_above_50k": 0.6711409396
+      },
+      {
+        "occupation_display": "Prof-specialty",
+        "n": 4140,
+        "above_50k": 1859,
+        "percent_above_50k": 44.9033816425
+      },
+      {
+        "occupation_display": "Protective-serv",
+        "n": 649,
+        "above_50k": 211,
+        "percent_above_50k": 32.5115562404
+      },
+      {
+        "occupation_display": "Sales",
+        "n": 3650,
+        "above_50k": 983,
+        "percent_above_50k": 26.9315068493
+      },
+      {
+        "occupation_display": "Tech-support",
+        "n": 928,
+        "above_50k": 283,
+        "percent_above_50k": 30.4956896552
+      },
+      {
+        "occupation_display": "Transport-moving",
+        "n": 1597,
+        "above_50k": 320,
+        "percent_above_50k": 20.0375704446
+      },
+      {
+        "occupation_display": "Unknown",
+        "n": 1843,
+        "above_50k": 191,
+        "percent_above_50k": 10.3635377103
+      }
+    ],
+    "hours_band": [
+      {
+        "hours_band": "35-40",
+        "n": 17397,
+        "above_50k": 3598,
+        "percent_above_50k": 20.6817267345
+      },
+      {
+        "hours_band": "Over 40",
+        "n": 9581,
+        "above_50k": 3856,
+        "percent_above_50k": 40.2463208433
+      },
+      {
+        "hours_band": "Under 35",
+        "n": 5583,
+        "above_50k": 387,
+        "percent_above_50k": 6.9317571198
+      }
+    ],
+    "workclass": [
+      {
+        "workclass": "Federal-gov",
+        "n": 960,
+        "above_50k": 371,
+        "percent_above_50k": 38.6458333333
+      },
+      {
+        "workclass": "Local-gov",
+        "n": 2093,
+        "above_50k": 617,
+        "percent_above_50k": 29.4792164357
+      },
+      {
+        "workclass": "Never-worked",
+        "n": 7,
+        "above_50k": 0,
+        "percent_above_50k": 0.0
+      },
+      {
+        "workclass": "Private",
+        "n": 22696,
+        "above_50k": 4963,
+        "percent_above_50k": 21.8672893902
+      },
+      {
+        "workclass": "Self-emp-inc",
+        "n": 1116,
+        "above_50k": 622,
+        "percent_above_50k": 55.7347670251
+      },
+      {
+        "workclass": "Self-emp-not-inc",
+        "n": 2541,
+        "above_50k": 724,
+        "percent_above_50k": 28.4927194018
+      },
+      {
+        "workclass": "State-gov",
+        "n": 1298,
+        "above_50k": 353,
+        "percent_above_50k": 27.1956856703
+      },
+      {
+        "workclass": "Unknown",
+        "n": 1836,
+        "above_50k": 191,
+        "percent_above_50k": 10.4030501089
+      },
+      {
+        "workclass": "Without-pay",
+        "n": 14,
+        "above_50k": 0,
+        "percent_above_50k": 0.0
+      }
+    ],
+    "marital-status": [
+      {
+        "marital-status": "Divorced",
+        "n": 4443,
+        "above_50k": 463,
+        "percent_above_50k": 10.4208867882
+      },
+      {
+        "marital-status": "Married-AF-spouse",
+        "n": 23,
+        "above_50k": 10,
+        "percent_above_50k": 43.4782608696
+      },
+      {
+        "marital-status": "Married-civ-spouse",
+        "n": 14976,
+        "above_50k": 6692,
+        "percent_above_50k": 44.6848290598
+      },
+      {
+        "marital-status": "Married-spouse-absent",
+        "n": 418,
+        "above_50k": 34,
+        "percent_above_50k": 8.1339712919
+      },
+      {
+        "marital-status": "Never-married",
+        "n": 10683,
+        "above_50k": 491,
+        "percent_above_50k": 4.5960872414
+      },
+      {
+        "marital-status": "Separated",
+        "n": 1025,
+        "above_50k": 66,
+        "percent_above_50k": 6.4390243902
+      },
+      {
+        "marital-status": "Widowed",
+        "n": 993,
+        "above_50k": 85,
+        "percent_above_50k": 8.5599194361
+      }
+    ]
+  },
+  "joint": [
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "17-29",
+      "education_band": "Less than HS",
+      "n": 1415,
+      "above_50k": 12,
+      "percent_above_50k": 0.8480565371
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "17-29",
+      "education_band": "HS graduate",
+      "n": 2390,
+      "above_50k": 54,
+      "percent_above_50k": 2.2594142259
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "17-29",
+      "education_band": "College/associate",
+      "n": 2941,
+      "above_50k": 94,
+      "percent_above_50k": 3.1961917715
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "17-29",
+      "education_band": "Bachelor's+",
+      "n": 1118,
+      "above_50k": 101,
+      "percent_above_50k": 9.0339892665
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "30-44",
+      "education_band": "Less than HS",
+      "n": 850,
+      "above_50k": 43,
+      "percent_above_50k": 5.0588235294
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "30-44",
+      "education_band": "HS graduate",
+      "n": 2829,
+      "above_50k": 390,
+      "percent_above_50k": 13.7857900318
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "30-44",
+      "education_band": "College/associate",
+      "n": 2406,
+      "above_50k": 494,
+      "percent_above_50k": 20.532003325
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "30-44",
+      "education_band": "Bachelor's+",
+      "n": 1865,
+      "above_50k": 797,
+      "percent_above_50k": 42.7345844504
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "45-59",
+      "education_band": "Less than HS",
+      "n": 739,
+      "above_50k": 63,
+      "percent_above_50k": 8.5250338295
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "45-59",
+      "education_band": "HS graduate",
+      "n": 1823,
+      "above_50k": 431,
+      "percent_above_50k": 23.6423477784
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "45-59",
+      "education_band": "College/associate",
+      "n": 1298,
+      "above_50k": 429,
+      "percent_above_50k": 33.0508474576
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "45-59",
+      "education_band": "Bachelor's+",
+      "n": 1155,
+      "above_50k": 654,
+      "percent_above_50k": 56.6233766234
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "60+",
+      "education_band": "Less than HS",
+      "n": 499,
+      "above_50k": 30,
+      "percent_above_50k": 6.0120240481
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "60+",
+      "education_band": "HS graduate",
+      "n": 760,
+      "above_50k": 100,
+      "percent_above_50k": 13.1578947368
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "60+",
+      "education_band": "College/associate",
+      "n": 459,
+      "above_50k": 102,
+      "percent_above_50k": 22.2222222222
+    },
+    {
+      "hours_comparison": "40 hours or less",
+      "age_band": "60+",
+      "education_band": "Bachelor's+",
+      "n": 433,
+      "above_50k": 191,
+      "percent_above_50k": 44.1108545035
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "17-29",
+      "education_band": "Less than HS",
+      "n": 184,
+      "above_50k": 9,
+      "percent_above_50k": 4.8913043478
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "17-29",
+      "education_band": "HS graduate",
+      "n": 593,
+      "above_50k": 48,
+      "percent_above_50k": 8.0944350759
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "17-29",
+      "education_band": "College/associate",
+      "n": 571,
+      "above_50k": 62,
+      "percent_above_50k": 10.8581436077
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "17-29",
+      "education_band": "Bachelor's+",
+      "n": 499,
+      "above_50k": 131,
+      "percent_above_50k": 26.25250501
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "30-44",
+      "education_band": "Less than HS",
+      "n": 247,
+      "above_50k": 29,
+      "percent_above_50k": 11.7408906883
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "30-44",
+      "education_band": "HS graduate",
+      "n": 1262,
+      "above_50k": 322,
+      "percent_above_50k": 25.5150554675
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "30-44",
+      "education_band": "College/associate",
+      "n": 1307,
+      "above_50k": 488,
+      "percent_above_50k": 37.337413925
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "30-44",
+      "education_band": "Bachelor's+",
+      "n": 1723,
+      "above_50k": 1117,
+      "percent_above_50k": 64.8287869994
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "45-59",
+      "education_band": "Less than HS",
+      "n": 236,
+      "above_50k": 43,
+      "percent_above_50k": 18.2203389831
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "45-59",
+      "education_band": "HS graduate",
+      "n": 714,
+      "above_50k": 282,
+      "percent_above_50k": 39.4957983193
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "45-59",
+      "education_band": "College/associate",
+      "n": 663,
+      "above_50k": 304,
+      "percent_above_50k": 45.8521870287
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "45-59",
+      "education_band": "Bachelor's+",
+      "n": 1089,
+      "above_50k": 792,
+      "percent_above_50k": 72.7272727273
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "60+",
+      "education_band": "Less than HS",
+      "n": 83,
+      "above_50k": 15,
+      "percent_above_50k": 18.0722891566
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "60+",
+      "education_band": "HS graduate",
+      "n": 130,
+      "above_50k": 48,
+      "percent_above_50k": 36.9230769231
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "60+",
+      "education_band": "College/associate",
+      "n": 95,
+      "above_50k": 40,
+      "percent_above_50k": 42.1052631579
+    },
+    {
+      "hours_comparison": "Over 40 hours",
+      "age_band": "60+",
+      "education_band": "Bachelor's+",
+      "n": 185,
+      "above_50k": 126,
+      "percent_above_50k": 68.1081081081
+    }
+  ],
+  "report_markdown": "### Findings\n- **Overall:** 7,841 of 32,561 records (24.1%) earn above $50,000.\n- **Age:** The largest age-group rate is 45-59 at 38.8%. Income does not rise steadily across every age band.\n- **Education:** 48.5% of the bachelor's-or-higher group earn above $50,000, compared with 16.0% of high school graduates.\n- **Occupation:** Executive/managerial and professional-specialty rates are 48.4% and 44.9%, respectively.\n- **Hours:** The rate is 40.2% for over 40 hours per week and 20.7% for 35\u201340 hours.\n- **Combined view:** The highest rate among cells with at least 100 records is 72.7% for age 45-59, Bachelor's+, and over 40 hours (n=1,089). This is the highest displayed combination, not an adjusted predictor ranking.\n\n### What this means\nThe descriptive patterns are consistent with the broader hypothesis. Education, age,\noccupation, and work hours all show differences, and the combined view shows why a single\neducation comparison is incomplete. These results do not establish each variable's independent\neffect or prove the hypothesis. A later classification analysis can examine the variables together.\n\n### Limits\nThe data are from 1994 and use broad income categories. The summaries are unweighted.\nMissing occupations remain a separate group. Small groups can produce unstable percentages.\nDifferences across recorded sex categories may reflect other measured or unmeasured factors.\nNo causal conclusion, predictive accuracy claim, or action recommendation is made.\nThis project ends at **Step 4: Report**.\n"
+}

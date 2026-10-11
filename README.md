@@ -10,11 +10,16 @@ includes its analysis, presentation, and Python code and output PDF.
 | 1: Data preparation | [Python script](micro_project_1.py) | [PowerPoint](deliverables/Douglas_Bobeck_ANA500_Micro_Project_1.pptx), [slides PDF](deliverables/Douglas_Bobeck_ANA500_Micro_Project_1.pdf), [code PDF](deliverables/Douglas_Bobeck_ANA500_Micro_Project_1_Code.pdf) |
 | 2: Income visualizations | [Jupyter notebook](week2/Micro_Project_2.ipynb) | [PowerPoint](week2/Douglas_Bobeck_ANA500_Micro_Project_2.pptx), [slides PDF](week2/Douglas_Bobeck_ANA500_Micro_Project_2.pdf), [code PDF](week2/Douglas_Bobeck_ANA500_Micro_Project_2_Code.pdf) |
 | 3: Weekly work hours regression | [Jupyter notebook](week3/Micro_Project_3.ipynb) | [PowerPoint](week3/Douglas_Bobeck_ANA500_Micro_Project_3.pptx), [slides PDF](week3/Douglas_Bobeck_ANA500_Micro_Project_3.pdf), [code PDF](week3/Douglas_Bobeck_ANA500_Micro_Project_3_Code.pdf) |
-| 4: Deep learning forecasts | [Jupyter notebook](week4/Micro_Project_4.ipynb) | [PowerPoint](week4/Douglas_Bobeck_ANA500_Micro_Project_4.pptx), [slides PDF](week4/Douglas_Bobeck_ANA500_Micro_Project_4.pdf), [code PDF](week4/Douglas_Bobeck_ANA500_Micro_Project_4_Code.pdf) |
+| 4: Neural networks for weekly work hours | [Jupyter notebook](week4/Micro_Project_4.ipynb) | [PowerPoint](week4/Douglas_Bobeck_ANA500_Micro_Project_4.pptx), [slides PDF](week4/Douglas_Bobeck_ANA500_Micro_Project_4.pdf), [code PDF](week4/Douglas_Bobeck_ANA500_Micro_Project_4_Code.pdf) |
 
 See the [Week 2 guide](week2/README.md), [Week 3 guide](week3/README.md), and [Week 4 guide](week4/README.md) for
 their methods, results, and instructions for running the notebooks. Each week
 has its own requirements file. The remaining sections describe Week 1.
+
+Week 4 continues Week 3's Adult dataset and evaluation framework, comparing MLP
+and RNN regression with traditional models. The earlier bike-rental example is
+preserved in [this archive](archive/Week_4_Bike_Rentals_Original.zip); its contents
+are unchanged. The current Week 4 submission is in `week4/`.
 
 ## Micro-Project 1: Education and Income
 

@@ -1,0 +1,4 @@
+Order,Fields,CV RMSE,Fold SD
+Original,"age, education, occupation, workclass, marital-status, relationship, sex",10.672777910441079,0.1542614453387676
+Reversed,"sex, relationship, marital-status, workclass, occupation, education, age",10.646952338035915,0.1734362380511217
+Shuffled,"workclass, occupation, sex, marital-status, education, relationship, age",10.662146889685868,0.1594510548573039

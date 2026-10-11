@@ -1,0 +1,85 @@
+{
+  "source_sha256": "f2c62076f19504d99a38b22badf445a7f42530ade6b827acf78dd143fbce38bb",
+  "seed": 42,
+  "rows": 32561,
+  "train_rows": 26048,
+  "test_rows": 6513,
+  "features": [
+    "age",
+    "education",
+    "occupation",
+    "workclass"
+  ],
+  "comparison": [
+    {
+      "Model": "Mean baseline",
+      "CV RMSE": 12.340203039649348,
+      "Fold SD": 0.23987600328707018,
+      "MAE": 7.607195721248866,
+      "RMSE": 12.37088631693164,
+      "R-squared": -0.00034433873050754293
+    },
+    {
+      "Model": "Linear regression",
+      "CV RMSE": 11.541807299870621,
+      "Fold SD": 0.1986354200533359,
+      "MAE": 7.87257188496624,
+      "RMSE": 11.565303057000158,
+      "R-squared": 0.1256970942080735
+    },
+    {
+      "Model": "Support vector regression",
+      "CV RMSE": 10.926396722905293,
+      "Fold SD": 0.18685643703267157,
+      "MAE": 7.163957438506468,
+      "RMSE": 10.889020954538982,
+      "R-squared": 0.2249574359467187
+    },
+    {
+      "Model": "Decision tree regression",
+      "CV RMSE": 11.020568810137172,
+      "Fold SD": 0.16673689715689735,
+      "MAE": 7.493816212817222,
+      "RMSE": 10.964030300407046,
+      "R-squared": 0.21424285107535057
+    }
+  ],
+  "settings": {
+    "Mean baseline": {},
+    "Linear regression": {},
+    "Support vector regression": {
+      "model__C": 10.0,
+      "model__epsilon": 2.0
+    },
+    "Decision tree regression": {
+      "model__max_depth": 8,
+      "model__min_samples_leaf": 25
+    }
+  },
+  "error_groups": [
+    {
+      "hours_band": "Under 35",
+      "n": 1124,
+      "actual_mean": 21.612989323843415,
+      "predicted_mean": 34.86061820990622,
+      "MAE": 13.808410929979468,
+      "mean_residual": -13.247628886062806
+    },
+    {
+      "hours_band": "35-40",
+      "n": 3418,
+      "actual_mean": 39.53774136922177,
+      "predicted_mean": 40.263746127930325,
+      "MAE": 2.7540971571378816,
+      "mean_residual": -0.7260047587085511
+    },
+    {
+      "hours_band": "Over 40",
+      "n": 1971,
+      "actual_mean": 53.339421613394215,
+      "predicted_mean": 42.607138985053595,
+      "MAE": 11.0221698775233,
+      "mean_residual": 10.732282628340622
+    }
+  ]
+}
